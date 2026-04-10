@@ -1,0 +1,79 @@
+body {
+  background: #f1a1a1;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: #f7f0f096;
+}
+main {
+  padding-top: 100px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.3rem; /* aumenta bastante o tamanho da fonte */
+  line-height: 1.6; /* espaçamento entre linhas para facilitar leitura */
+  max-width: 750px; /* largura máxima para não ficar muito esticado */
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(to bottom, #7c0f0f, rgba(0, 0, 0, 0));
+  font-weight: bold;
+}
+.header img {
+  width: 360px;
+  max-width: 40%;
+  height: auto;
+}
+.header h1 {
+  text-align: center;
+}
+
+.header .header-nav {
+  float: right;
+}
+.header .header-nav ul {
+  list-style: none;
+  margin-top: 30px;
+}
+.header .header-nav ul li {
+  display: inline-block;
+}
+.header .header-nav ul li a {
+  margin: 30px;
+  padding: 10px;
+  background: rgba(243, 1, 1, 0.007);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+  color: #f7f0f096;
+}
+.header .header-nav ul a:hover {
+  background: #7c0f0f;
+}
+
+.btn {
+  display: center;
+  padding: 10px 16px;
+  background: #7c0f0f;
+  color: #f7f0f096;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: rgba(243, 1, 1, 0.007);
+}
+.footer-historia {
+  text-align: center;
+  background-color: #7c0f0f;
+}
+.footer-historia img {
+  width: 300px;
+  position: absolute; /* posiciona em relação ao footer */
+  bottom: 0; /* encosta na parte inferior do footer */
+  right: 0;
+}
