@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pr-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="imagens/icone.png" />
   </head>
-  <body>
+  <body class="home-page">
     <header class="header">
       <h1>Papai Noel - Corrida dos Presentes</h1>
       <img src="imagens/icone.png" alt="Papai Noel" />
@@ -18,14 +18,17 @@
           </li>
         </ul>
       </nav>
-      <div class="jogo">
-        <iframe
-          src="jogo/index.html"
-          frameborder="0"
-          width="60%"
-          height="500px"
-        ></iframe>
-      </div>
     </header>
+    <main class="pagina-principal">
+      <div class="jogo">
+        <div class="jogo-quadro">
+          <iframe
+            src="jogo/index.html"
+            title="Jogo Corrida dos Presentes"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
