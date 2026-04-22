@@ -1,33 +1,52 @@
 body {
-  background: #f1a1a1;
+  background: #3b3939;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
-  color: #f7f0f096;
   overflow-x: hidden;
-  height: 100vh; /* ocupa toda a altura da tela */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
 }
 
 .home-page {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+.home-page .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 16px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.home-page .header h1,
+.home-page .header img,
+.home-page .header .header-nav {
+  pointer-events: auto;
 }
 
 .historia-page {
   min-height: 100vh;
 }
 
-.pagina-principal {
+.home-page .header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100vh;
-  margin: 0;
+  z-index: 10;
+  padding: 10px 16px 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1rem;
-  line-height: normal;
+  pointer-events: none;
+}
+
+.home-page .header h1,
+.home-page .header img,
+.home-page .header .header-nav {
+  pointer-events: auto;
 }
 
 .historia-conteudo {
@@ -35,7 +54,7 @@ body {
   text-align: center;
   font-family: cursive;
   font-size: 1.3rem;
-  line-height: 1.6;
+  line-height: 1.6;1
   max-width: 750px;
   margin: auto;
 }
@@ -83,7 +102,6 @@ body {
 }
 
 .home-page .header {
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
@@ -153,4 +171,21 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+}
+@media (max-width: 768px) {
+  .home-page .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .home-page .header img {
+    width: 96px;
+    max-width: 32%;
+  }
+
+  .pagina-principal {
+    padding-top: 150px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 24px;
+  }
 }
