@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   color: #f7f0f096;
+  overflow: hidden; /* evita barras pretas ou scroll extra */
 }
 main {
   padding-top: 100px;
@@ -76,4 +77,10 @@ main {
   position: absolute; /* posiciona em relação ao footer */
   bottom: 0; /* encosta na parte inferior do footer */
   right: 0;
+}
+.jogo {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  height: 100vh; /* ocupa a altura total da tela */
 }
